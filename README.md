@@ -64,3 +64,9 @@ Python also requires the following modules:
 These will be installed automatically by the script (pygit2 is the most problematic, if the script could not install it, it will provide a link to the official installation guide).
 
 The default version of *ctags* that is available on Ubuntu is *Exuberant Ctags*. diffanalyze requires *Universal Ctags*, which provides additional features. The setup script will install the required version as **universalctags** (should avoid conflicts with the default one).
+
+## Requirements
+
+Use ```python3 setup.py``` to install it and its dependencies.
+
+Use ```python3 setup.py develop``` for development
