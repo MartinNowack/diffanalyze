@@ -490,7 +490,7 @@ class RepoManager:
 
         RepoManager.check_dirs()
         path = 'img/skip/' if skip else 'img/'
-        plt.savefig(path + 'function_commits.pdf', bbox_inches='tight')
+    plt.savefig(path + 'function_commits.png', bbox_inches='tight')
 
     def plot_fn_per_commit_restricted(self, skip, limit):
         ordered_dict = self.order_results()
@@ -510,7 +510,7 @@ class RepoManager:
 
         RepoManager.check_dirs()
         path = 'img/skip/' if skip else 'img/'
-        plt.savefig(path + 'function_commits_restricted.pdf', bbox_inches='tight')
+    plt.savefig(path + 'function_commits_restricted.png', bbox_inches='tight')
 
     def plot_other_changed(self, skip):
         ordered_other_dict = self.order_results(other=True)
@@ -523,7 +523,7 @@ class RepoManager:
 
         RepoManager.check_dirs()
         path = 'img/skip/' if skip else 'img/'
-        plt.savefig(path + 'no_function_commits.pdf', bbox_inches='tight')
+    plt.savefig(path + 'no_function_commits.png', bbox_inches='tight')    
 
     def summary(self):
         print('Information from other changed files:')
